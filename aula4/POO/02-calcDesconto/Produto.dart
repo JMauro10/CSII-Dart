@@ -14,11 +14,11 @@ class Produto {
 }
 
 void main() {
-  // Criando produtos
+  
   Produto produto1 = Produto(nome: "Notebook", preco: 2500.00);
   Produto produto2 = Produto(nome: "Celular", preco: 1200.00);
 
-  // Exibindo o preço original e o desconto aplicado
+  
   print("${produto1.nome} - Preço original: R\$ ${produto1.preco.toStringAsFixed(2)}");
   print("${produto1.nome} com desconto de 10%: R\$ ${produto1.calcularDesconto(10).toStringAsFixed(2)}");
   
