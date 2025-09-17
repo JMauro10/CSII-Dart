@@ -3,21 +3,25 @@ import 'package:flutter/material.dart';
 import 'home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyApp2());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyApp2 extends StatelessWidget {
+  const MyApp2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-       
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: HomePage(mensagem: "heloo"),
+
+      //   essa variavel mensagem foi utilizada de forma POSICIONAL
+      // home: HomePage("Uma mensagem de Intervalo"),
+
+      // essa variavel foi utilizanda de forma declarativa
+      home: HomePage(mensagem: "Minha mensageem"),
     );
   }
 }
